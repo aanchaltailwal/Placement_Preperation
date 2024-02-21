@@ -2,6 +2,6 @@
 int main(){
     int i = 1024;
     for(; i; i>>=1)
-        printf("Hello\n");
+        printf("Hello\n ");
     return 0;
 }
