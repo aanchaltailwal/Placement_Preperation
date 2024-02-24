@@ -8,6 +8,6 @@ int main(){
         x++;
         y--;
     }
-    printf("sum of two numbers is:", x);
+    printf("sum of two numbers is:%d\n", x);
     return 0;
 }
