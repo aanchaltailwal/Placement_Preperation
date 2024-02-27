@@ -1,3 +1,3 @@
 # PLACEMENT PREPERATION
 
-## This repository Contains DSA practice question in C
+## This repository Contains DSA question in C language
