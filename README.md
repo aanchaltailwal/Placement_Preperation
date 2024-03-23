@@ -5,4 +5,4 @@
 
 - Each data structure and algorithm is implemented in separate files within the repository. You can browse through the directories to find the implementation you are interested in. Each file typically contains the implementation along with comments explaining the logic and usage of the code.
 
-- There are different directories for different codes
+- There are different directories for different codes.
