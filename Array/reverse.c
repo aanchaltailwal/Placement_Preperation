@@ -5,13 +5,13 @@ int main(){
 
     //original order
     for(i=0; i<9; i++){
-        printf("%d", a[i]);
+        printf("%d ", a[i]);
     }
     printf("\n");
 
     //reverse order
     for(i=8; i>=0; i--){
-        printf("%d", a[i]);
+        printf("%d ", a[i]);
     }
     return 0;
 }
