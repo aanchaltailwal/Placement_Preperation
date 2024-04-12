@@ -20,7 +20,7 @@ int main(){
         printf("Sorry cannot Multiply");
     }
     else{
-        pritnf("Enter the elements of matrix b: \n");
+        printf("Enter the elements of matrix b: \n");
         for(i=0; i<brows; i++){
             for(j=0; j<bcolumns; j++){
                 scanf("%d",&b[i][j]);
@@ -33,7 +33,16 @@ int main(){
             for(k=0; k<brows; k++){
                 sum += a[i][k] * b[k][j];
             }
-            product
+            product[i][j] = sum;
+            sum = 0;
         }
     }
+    printf("Resultant matrix\n");
+    for(i=0; i<arows; i++){
+        for(j=0; j<bcolumns; j++){
+            printf("%d", product [i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
 }
