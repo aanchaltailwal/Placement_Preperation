@@ -33,3 +33,42 @@ She can't
 
 Sample I/O Explanation:*/
 
+#include <stdio.h>
+#define SIZEN 100005
+
+int gcd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+int can_she(int *A, int N, int X, int Y, int Z) {
+    int common_divisor = A[0];
+    for (int i = 1; i < N; i++) {
+        common_divisor = gcd(common_divisor, A[i]);
+    }
+    
+    return (common_divisor % X == 0 && common_divisor % Y == 0 && common_divisor % Z == 0);
+}
+
+//Do not edit this part of code 
+int main() {
+    int T, N, X, Y, Z;
+    scanf("%d", &T);
+    while (T--) {
+        scanf("%d %d %d %d", &N, &X, &Y, &Z);
+        int A[SIZEN];
+        for (int i = 0; i < N; i++) {
+            scanf("%d", &A[i]);
+        }
+        
+        if (can_she(A, N, X, Y, Z))
+            printf("She can\n");
+        else
+            printf("She can't\n");
+    }
+    return 0;
+}
